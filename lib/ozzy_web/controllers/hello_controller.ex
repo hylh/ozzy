@@ -1,0 +1,10 @@
+defmodule OzzyWeb.HelloController do
+  use OzzyWeb, :controller
+
+  def index(conn, _params) do
+    conn
+    |> put_layout(false)
+    |> render("index.html")
+  end
+
+end
